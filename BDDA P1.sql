@@ -7,11 +7,11 @@ CREATE TABLE Customers (
 	FirstName VARCHAR (50) NOT NULL,
 	LastName VARCHAR (50),
 	Email VARCHAR (50),
-	Phone VARCHAR (15),
+	Phone CHAR (11),
 	Address VARCHAR (100),
 	City VARCHAR (20),
 	State VARCHAR (60),
-	PostalCode VARCHAR (10),
+	PostalCode CHAR (6),
 	Country VARCHAR (20)
 );
 
@@ -25,7 +25,7 @@ CREATE TABLE Suppliers (
     SupplierID INT PRIMARY KEY,
     SupplierName VARCHAR(100),
     ContactName VARCHAR(50),
-    Phone VARCHAR(15),
+    Phone CHAR(11),
     Email VARCHAR(100),
     Address VARCHAR(255)
 );
@@ -35,7 +35,7 @@ CREATE TABLE Stores (
     StoreName VARCHAR(100),
     Location VARCHAR(255),
     ManagerName VARCHAR(50),
-    ContactNumber VARCHAR(15)
+    ContactNumber CHAR(11)
 );
 
 CREATE TABLE Employees (
